@@ -1,0 +1,11 @@
+img{
+	border: 4px dotted orange;
+	border-radius: 50%;
+	max-height: 500px;
+}
+p#txt1:hover{
+	color: red;
+}
+p.cls2:hover{
+	color: blue;
+}
