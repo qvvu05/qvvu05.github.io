@@ -45,10 +45,8 @@ img{
 	background-color: white;
 	text-align: center;
 	position: absolute;		
-	/*top: 100px;*/
 	left: 25px;
 	width: 25%;
-	/*height: 300px;*/
 }
 
 .main-menu a{
