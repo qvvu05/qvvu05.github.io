@@ -1,0 +1,41 @@
+*{
+	box-sizing: border-box;
+}
+.clear{
+	clear: both;
+}
+
+.wrap{
+	max-width: 1000px;
+	margin: auto;
+}
+.main-menu{
+	background-color: white;
+	text-align: center;
+}
+
+.main-menu a{
+	margin: 10px;
+	color: red;
+	font-size: 2em;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.box{
+
+	float: left;
+	width: 33.333333%;
+}
+
+.box:hover{
+	border: 5px solid orange;
+	/*border-radius: 50%;*/
+}
+.heading{
+	text-align: center;
+}
+.heading:hover{
+	text-shadow: 2px 2px #ff0000;
+	/*font-size: 2em;*/
+}

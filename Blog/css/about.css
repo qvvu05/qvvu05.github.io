@@ -1,0 +1,57 @@
+*{
+	box-sizing: border-box;
+}
+
+.wrap{
+	max-width: 1000px;
+	margin: auto;
+}
+h1{
+	margin: 30px;
+}
+.main-menu{
+	/*border: 5px solid yellow;*/
+	background-color: white;
+	/*width: 90%;*/
+	text-align: center;
+}
+
+.main-menu a{
+	margin: 10px;
+	color: red;
+	font-size: 2em;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.box{
+	float: left;
+	width: 33.333333%;
+	padding: 15px;
+	
+	border: 5px solid red;
+}
+
+.info{
+	border-color: blue;
+}
+
+.info span{
+	color: blue;
+}
+
+.contact{
+	border-color: grey;
+}
+
+.contact span{
+	color: grey;
+}
+
+.company{
+	border-color: red;
+}
+
+.company span{
+	color: red;
+}
