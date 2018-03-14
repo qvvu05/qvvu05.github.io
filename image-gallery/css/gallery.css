@@ -37,5 +37,6 @@
 }
 .heading:hover{
 	text-shadow: 2px 2px #ff0000;
+	color: yellow;
 	/*font-size: 2em;*/
 }
