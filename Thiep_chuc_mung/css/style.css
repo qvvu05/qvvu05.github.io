@@ -1,10 +1,12 @@
 body {
+	max-width: 1000px;
     background-image:url("../img/photo.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 html {
-    height: 100%
+    height: 100%;
+
 }
 .content-of-this {
 	font-size: 5em;
@@ -209,7 +211,7 @@ html {
 }
 
 .slogan{
-	font-size: 3.4rem;
+	font-size: 1.4rem;
     color: green;
     position: absolute;
     bottom: 1%;
@@ -220,7 +222,7 @@ html {
 }
 
 .first-text {
-  font-size: 3.4rem;
+  font-size: 2.4rem;
   position: absolute;
   left: 2.5rem;
   top: 5rem;
@@ -232,7 +234,7 @@ html {
 }
 
 .second-text {
-  font-size: 3.4rem;
+  font-size: 2.4rem;
   position: absolute;
   top: 8.5rem;
   opacity: 0;
@@ -244,7 +246,7 @@ html {
 
 .third-text {
   transform: rotate(-90deg);
-  font-size: 2.5rem;
+  font-size: 1.4rem;
   position: absolute;
   left: 45%;
   top: 45%;
@@ -257,7 +259,7 @@ html {
 }
 
 .fourth-text {
-  font-size: 3.4rem;
+  font-size: 2.4rem;
   position: absolute;
   top: 10.5rem;
   left: 10%;
@@ -269,7 +271,7 @@ html {
 }
 
 .fifth-text {
-  font-size: 5rem;
+  font-size: 1.4rem;
   position: absolute;
   left: 5%;
   bottom: 25%;
