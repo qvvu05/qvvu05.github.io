@@ -1,0 +1,95 @@
+*{
+	box-sizing: border-box;
+}
+.clear{
+	clear: both;
+}
+
+.wrap{
+	position: relative;
+	max-width: 1000px;
+	margin: auto;
+}
+.main-menu{
+	background-color: white;
+	text-align: center;
+}
+
+.main-menu a{
+	margin: 10px;
+	color: red;
+	font-size: 2em;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.box{
+	float: left;
+	width: 33.333333%;
+	padding: 15px;
+	position: relative;
+}
+
+.box:hover{
+	border: 5px solid pink;
+}
+
+
+.heading{
+	text-align: center;
+}
+
+.heading:hover{
+	text-shadow: 2px 2px #ff0000;
+	color: yellow;
+	/*font-size: 2em;*/
+}
+
+.thumb img{
+	opacity: 1;
+	
+}
+.thumb:hover img{
+	opacity: 0.5;
+	transition: all 0.5s linear;
+}
+
+.thumb1{
+	overflow: hidden;
+}
+
+.thumb1:hover img{
+	transform: translate(0, -5px);
+}
+
+
+.thumb2{
+	overflow: hidden;
+}
+.thumb2 img{
+	transition: all 0.5s linear;
+}
+
+.thumb2:hover img{
+	transform: scale(1.2);
+	box-shadow: 0 5px 5px 0;
+}
+
+@keyframes example{
+	0%,100% { opacity: 1; }
+	50% {
+		transform: translateX(500px);
+		opacity: 0; 
+	}
+	
+
+}
+
+p.author {
+	position: absolute;
+	left: 10px;
+	padding: 30px;
+	font-size: 2em;
+	text-transform: uppercase;
+	animation: example 8s ease infinite;
+}
