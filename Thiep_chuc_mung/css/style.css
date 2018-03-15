@@ -244,15 +244,15 @@ html {
 
 .third-text {
   transform: rotate(-90deg);
-  font-size: 2rem;
+  font-size: 2.5rem;
   position: absolute;
   left: 45%;
   top: 45%;
   opacity: 0;
   animation-name: topFadeOutVertical;
-  animation-delay: 7.5s;
+  animation-delay: 10s;
   animation-duration: 6s;
-  color: #A3DDF0;
+  color: #ebf0a3;
   white-space: nowrap;
 }
 
@@ -264,7 +264,7 @@ html {
   opacity: 0;
   color: #F0A3BE;
   animation-name: fadeInOut;
-  animation-delay: 8.5s;
+  animation-delay: 15s;
   animation-duration: 9s;
 }
 
@@ -276,6 +276,6 @@ html {
   opacity: 0;
   color: #F0EBA3;
   animation-name: bottomFadeOut;
-  animation-delay: 10s;
+  animation-delay: 20s;
   animation-duration: 9s;
 }
