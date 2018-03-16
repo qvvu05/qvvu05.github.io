@@ -1,0 +1,118 @@
+*{
+	box-sizing: border-box;
+	margin: auto;
+	padding: 0;
+}
+
+body{
+	background-color: pink;
+}
+
+img{
+	width: 100%;
+}
+
+.banner{
+	margin:auto;
+	margin-top: 40px;
+	max-width: 100%;
+}
+.banner img{
+	max-width: 100%;
+}
+
+a{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: courier;
+}
+
+.clear{
+	clear: both;
+}
+
+
+
+
+.tin-noi-bat{
+	position: relative;
+	border: 1px solid white;
+}
+
+
+.box{
+	/*border: 5px solid blue;*/
+	float:left;
+	width: 33.3333%;
+	margin: auto;
+}
+
+.box img{
+	overflow: hidden;
+}
+.container{
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 0;
+	border: 1px solid white;
+}
+
+p{
+ 	margin-top: 30px;
+	font-family: courier;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 2em;
+	padding-left: 35px;
+}
+/*Menu*/
+
+ul.navigation{
+	background-color: #0080C0;
+	list-style-type: none;
+}
+ul.navigation li{
+	float: left;
+	 position: relative;
+	 display: inline-block;
+	 padding: 0 40px;
+}
+ul.navigation li a{
+	
+	line-height: 40px;
+	display: block;
+	text-transform: uppercase;
+    color: #fff;
+}
+
+ul.navigation .sub-menu{
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    background-color: #ccc;
+}
+
+ul.navigation li:hover .sub-menu{
+	display: block;
+
+ul.navigation li .sub-menu li{
+	border-bottom: 1px solid #eee;
+}
+
+
+
+
+.sub-menu li .sub-menu-1{
+	display: none;
+	
+}
+.sub-menu li:hover .sub-menu-1{
+	display: inline-block;
+	width: 60px;
+	position: absolute;
+	top: 0;
+	left: 100%;
+
+}
