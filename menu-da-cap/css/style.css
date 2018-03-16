@@ -46,11 +46,18 @@ a{
 	float:left;
 	width: 33.3333%;
 	margin: auto;
+	overflow: hidden;
 }
 
 .box img{
-	overflow: hidden;
+	transition: transform 0.5s linear;
 }
+
+.box img:hover{
+	transform: scale(1.2);
+}
+
+
 .container{
 	max-width: 1300px;
 	margin: 0 auto;
