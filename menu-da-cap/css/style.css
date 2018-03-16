@@ -86,7 +86,7 @@ ul.navigation li a{
     color: #fff;
 }
 
-ul.navigation .sub-menu{
+ul.navigation li .sub-menu{
     display: none;
     position: absolute;
     top: 40px;
@@ -96,6 +96,8 @@ ul.navigation .sub-menu{
 
 ul.navigation li:hover .sub-menu{
 	display: block;
+	width: 200px;
+}
 
 ul.navigation li .sub-menu li{
 	border-bottom: 1px solid #eee;
