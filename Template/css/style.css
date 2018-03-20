@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding: 0;
+}
+header{
+    background-image: url("../img/background.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-nav{
+    float: right;
+    list-style-type:none;
+    margin-top: 30px;
+}
+
+.main-nav li{
+    display:inline-block;
+}
+
+.main-nav li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-nav li:hover a{
+    border: 1px solid white;
+}
+
+.row{
+    max-width: 1200px;
+    margin:auto;
+}
