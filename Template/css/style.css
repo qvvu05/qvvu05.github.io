@@ -4,7 +4,7 @@
 }
 header{
     background-image: url("../img/background.jpg");
-    height: 100vh;
+    height: 100vh; /* 1vh=1% of viewpoint (size of browser windows)*/
     background-size: cover;
     background-position: center;
 }
