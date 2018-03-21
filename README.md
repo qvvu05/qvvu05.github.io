@@ -67,3 +67,7 @@ git fetch origin
 
 git reset --hard origin/master
 Search	Search the working directory for foo():	git grep "foo()"
+
+An alternative approach is to put your username and password in your ~/.netrc file, although, as with keeping the password in the remote URL, this means that your password will be stored on the disk in plain text and is thus less secure and not recommended. However, if you want to take this approach, add the following line to your ~/.netrc:
+
+machine <hostname> login <username> password <password>
