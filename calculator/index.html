@@ -40,6 +40,13 @@
             <button onclick="pressbtn(this)" class="key">3</button>
             <button onclick="parsePlus()" class="key">&plus;</button>
         </div>
+        <div class="row ">
+            <button onclick="pressbtn(this)" class="key last-row">0</button>
+            <button onclick="pressbtn(this)" class="key last-row">.</button>
+            <button onclick="square()" class="key last-row">^2</button>
+            <button onclick="square_root()" class="key last-row">&radic;</button>
+            <button onclick="factorial()" class="key last-row">!</button>
+        </div>
 
     </div>
     <script>
@@ -50,11 +57,14 @@
         }
         function parseRes() {
             //return result
-            var res= document.getElementById('result').innerHTML;
-            document.getElementById('result').innerHTML = eval(res) ;
+            var res = document.getElementById('result').innerHTML;
+            document.getElementById('result').innerHTML = eval(res);
         }
         function parseDiv() {
             document.getElementById('result').innerHTML += '/';
+        }
+        function parsePlus() {
+            document.getElementById('result').innerHTML += '+';
         }
         function parseMul() {
             document.getElementById('result').innerHTML += '*';
@@ -65,9 +75,31 @@
         function parseMod() {
             document.getElementById('result').innerHTML += '%';
         }
+        function square() {
+            var res = document.getElementById('result').innerHTML;
+            res = res + '*' + res;
+            document.getElementById('result').innerHTML = eval(res);
+        }
+        function square_root() {
+            var res = document.getElementById('result').innerHTML;
+            res = 'Math.sqrt(' + res + ')';
+            document.getElementById('result').innerHTML = eval(res);
+        }
+        function factorial() {
+            var res = document.getElementById('result').innerHTML;
+            res = parseFloat(res);
+            var fac = 1;
+            for (var i = 1; i <= res; i++) {
+                fac *= i;
+            }
+            
+            document.getElementById('result').innerHTML = fac.toString();
+        }
+
         function pressbtn(button) {
             document.getElementById('result').innerHTML += button.innerHTML;
         }
+
     </script>
 </body>
 
