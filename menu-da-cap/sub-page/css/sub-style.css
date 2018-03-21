@@ -5,7 +5,7 @@
 }
 
 body{
-	background-color:#0080C0;
+	background-color: pink;
 }
 
 img{
@@ -29,6 +29,14 @@ img{
 	max-width: 100%;
 }
 
+/*Menu*/
+
+ul.navigation{
+	background-color: #0080C0;
+	list-style-type: none;
+}
+
+
 .navigation li a{
 	text-decoration: none;
 	text-transform: uppercase;
@@ -39,7 +47,7 @@ img{
 
 ul.navigation{
 	display: inline;
-	background-color: #0080c0;
+	width: 200px;
 }
 
 ul.navigation li{
@@ -90,42 +98,8 @@ ul.navigation li:hover .sub-menu li a{
 }
 
 
-
-
-.tin-noi-bat{
-	position: relative;
-	border: 1px solid white;
-}
-
-
-.box{
-	/*border: 5px solid blue;*/
-	float:left;
-	width: 33.3333%;
-	margin: auto;
-	overflow: hidden;
-}
-
-.box img{
-	transition: transform 0.5s linear;
-}
-
-.box img:hover{
-	transform: scale(1.2);
-}
-
-
-p{
- 	margin-top: 30px;
-	/*font-family: courier;*/
-	text-transform: uppercase;
-	font-weight: bold;
-	font-size: 2em;
-	padding-left: 35px;
-}
-/*Menu*/
-
-ul.navigation{
-	background-color: #0080C0;
-	list-style-type: none;
+/*Main content*/
+.main-content{
+	border: 5px solid black;
+	width: 90%;
 }
