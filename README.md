@@ -1,10 +1,13 @@
 /*add changed file*/
+
 git add FILE_NAME
 
 
-/*commit*/
+/*commit*/<br/>
+
 git commit -m 'COMMENT'
 
 
-/*push to master*/
+/*push to master*/<>
+
 git push origin master
