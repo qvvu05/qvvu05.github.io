@@ -50,19 +50,20 @@
         }
         function parseRes() {
             //return result
-            document.getElementById('result').innerHTML= '';
+            var res= document.getElementById('result').innerHTML;
+            document.getElementById('result').innerHTML = eval(res) ;
         }
         function parseDiv() {
-
+            document.getElementById('result').innerHTML += '/';
         }
-        function parseDiv() {
-            num1=document.getElementById('result').innerHTML;
+        function parseMul() {
+            document.getElementById('result').innerHTML += '*';
         }
-        function parseDiv() {
-
+        function parseSub() {
+            document.getElementById('result').innerHTML += '-';
         }
-        function parseDiv() {
-
+        function parseMod() {
+            document.getElementById('result').innerHTML += '%';
         }
         function pressbtn(button) {
             document.getElementById('result').innerHTML += button.innerHTML;
