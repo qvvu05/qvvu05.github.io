@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,25 +8,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/manager.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="main.js"></script>
 </head>
+
 <body>
     <div class="container">
-        <div class="header">Manager</div>
+        <div class="header contain">Manager</div>
         <h1 class="header_page_name">Quản lý học viên</h1>
         <button id="export_excel">Xuất file EXCEL</button>
         <div class="main-inform">
-            <h1 id="title_sub">Khóa học HTML</h1><br>
+            <h1 id="title_sub">Khóa học HTML</h1>
+            <br>
             <p class="inform">Giảng viên: Đặng Quang Huy</p>
             <p class="inform">Số lượng học viên: 30/30</p>
             <p class="inform">Văn phòng: Hà Nội</p>
-            
+
             <div class="brick"></div>
+
+            <div class="header_second">
+
+                <div class="address">
+                    Địa chỉ học:<br>
+                    <i class="material-icons" style="font-size:24px;color:red">add_location</i>
+                    <span>Số 14, Nguyễn Đình Chiểu, Hai Bà Trưng, Hoàn Kiếm, Hà Nội</span>
+                </div>
+                <input type="text" id="search" value="search">
+            </div>
+
+            <div class="brick2"></div>
         </div>
-        <div class="map">
-            Địa chỉ học: <br>
-            Số 14, Nguyễn Đình Chiểu, Hai Bà Trưng, Hoàn Kiếm, Hà Nội
+        <div class="dsach contain">
+            <h1>Danh Sách Lớp</h1>    
         </div>
+        <table class="tabl">
+            <tr>
+                <th>ID</th>
+                <th>Họ</th>
+                <th>Tên</th>
+                <th>Email</th>
+                <th>Điện thoại</th>
+                <th>Số buổi học</th>
+                <th>Điểm</th>
+                <th>Ngày đăng ký</th>
+            </tr>
+            <tr>
+                <td>123456789</td>
+                <td>Vũ</td>
+                <td>Quyền</td>
+                <td>qvvu05@gmail.com</td>
+                <td>0123456789</td>
+                <td>30</td>
+                <td>100/100</td>
+                <td>16/03/2018</td>
+            </tr>
+            
+        </table>
     </div>
 </body>
+
 </html>
