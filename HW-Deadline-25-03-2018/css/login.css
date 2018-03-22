@@ -1,0 +1,51 @@
+*{
+    border-sizing:border-box;
+    margin:0 auto;
+}
+.container{
+    position: relative;
+    max-width: 1000px;
+    height: 100vh;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+}
+.header, .footer{
+    height: 30px;
+    border-bottom: 2px solid black;
+}
+.main-contain{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid beige;
+    height: 50%;
+    width: 50%;
+}
+.main-contain #email{
+    width: 80%;
+    margin-top: 90px;
+    border: 2px solid black;
+}
+
+.main-contain #passwd{
+    width: 80%;
+    margin-top: 50px;
+    border: 2px solid black;
+}
+
+.main-contain #login{
+    position: absolute;
+    left: 10%;
+    margin-top: 50px;
+    /* border: 2px solid black; */
+}
+
+
+.footer{
+    position: absolute;
+    border-top: 2px solid black;
+    width: 100%;
+    bottom: 0;
+}
