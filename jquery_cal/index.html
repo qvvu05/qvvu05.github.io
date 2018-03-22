@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+
+</head>
+
+<body>
+    <h1 style="text-align:center;">MÁY TÍNH CÁ NHÂN</h1>
+    <div class="calculator">
+        <div id="result">
+
+        </div>
+        <div class="row">
+            <button onclick="clearTotal()" class="key">C</button>
+            <button onclick="parseRes()" class="key">=</button>
+            <button onclick="parseMod()" class="key">%</button>
+            <button onclick="parseDiv()" class="key">&divide;</button>
+        </div>
+        <div class="row">
+            <button onclick="pressbtn(this)" class="key">7</button>
+            <button onclick="pressbtn(this)" class="key">8</button>
+            <button onclick="pressbtn(this)" class="key">9</button>
+            <button onclick="parseMul()" class="key">x</button>
+        </div>
+        <div class="row">
+            <button onclick="pressbtn(this)" class="key">4</button>
+            <button onclick="pressbtn(this)" class="key">5</button>
+            <button onclick="pressbtn(this)" class="key">6</button>
+            <button onclick="parseSub()" class="key">&minus;</button>
+        </div>
+        <div class="row">
+            <button onclick="pressbtn(this)" class="key">1</button>
+            <button onclick="pressbtn(this)" class="key">2</button>
+            <button onclick="pressbtn(this)" class="key">3</button>
+            <button onclick="parsePlus()" class="key">&plus;</button>
+        </div>
+        <div class="row ">
+            <button onclick="pressbtn(this)" class="key last-row">0</button>
+            <button onclick="pressbtn(this)" class="key last-row">.</button>
+            <button onclick="square()" class="key last-row">^2</button>
+            <button onclick="square_root()" class="key last-row">&radic;</button>
+            <button onclick="factorial()" class="key last-row">!</button>
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script>
+        var num1, num2;
+
+        function clearTotal() {
+            document.getElementById('result').innerHTML = '';
+        }
+        function parseRes() {
+            //return result
+            var res = document.getElementById('result').innerHTML;
+            document.getElementById('result').innerHTML = eval(res);
+        }
+        function parseDiv() {
+            document.getElementById('result').innerHTML += '/';
+        }
+        function parsePlus() {
+            document.getElementById('result').innerHTML += '+';
+        }
+        function parseMul() {
+            document.getElementById('result').innerHTML += '*';
+        }
+        function parseSub() {
+            document.getElementById('result').innerHTML += '-';
+        }
+        function parseMod() {
+            document.getElementById('result').innerHTML += '%';
+        }
+        function square() {
+            var res = document.getElementById('result').innerHTML;
+            res = res + '*' + res;
+            document.getElementById('result').innerHTML = eval(res);
+        }
+        function square_root() {
+            var res = document.getElementById('result').innerHTML;
+            res = 'Math.sqrt(' + res + ')';
+            document.getElementById('result').innerHTML = eval(res);
+        }
+        function factorial() {
+            var res = document.getElementById('result').innerHTML;
+            res = parseFloat(res);
+            var fac = 1;
+            for (var i = 1; i <= res; i++) {
+                fac *= i;
+            }
+            
+            document.getElementById('result').innerHTML = fac.toString();
+        }
+
+        function pressbtn(button) {
+            document.getElementById('result').innerHTML += button.innerHTML;
+        }
+
+    </script> -->
+</body>
+
+</html>

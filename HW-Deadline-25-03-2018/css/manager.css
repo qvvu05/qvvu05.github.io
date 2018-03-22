@@ -1,0 +1,25 @@
+.header_page_name{
+    text-align: center;
+}
+
+.main-inform{
+    border: 2px solid silver;
+    position: absolute;
+    width: 100%;
+    top:95px;
+    padding-left: 40px;
+}
+.inform{
+    display:inline-block;
+    height: 30px;
+    width: 30%;
+}
+
+.brick{
+    position: absolute;
+    height: 2px;
+    width: 40%;
+    top:80px;
+    left:20px;
+    border: 1px solid black;
+}
