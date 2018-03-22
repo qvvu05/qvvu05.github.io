@@ -1,0 +1,21 @@
+.main-row{
+    display: block;
+}
+.row {
+float: left;
+margin-right: 10px;
+}
+.row .val_input{
+    border-width: 2px;
+    border-color: bisque;
+    border-style: solid;
+}
+
+.main-btn{
+    position: absolute;
+    top:50%;
+}
+.btn_device{
+    float: left;
+    margin-right: 100px;
+}
