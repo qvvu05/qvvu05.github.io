@@ -1,7 +1,6 @@
-*{
-    margin:0;
-    padding: 0;
-}
+/* ------------------------*/ /* ---------->>> GLOBAL <<<-----------*/ /* ------------------------*/
+
+/* ------------------------*/ /* ---------->>> HEADER <<<-----------*/ /* ------------------------*/
 header{
     background-image: url("../img/background.jpg");
     height: 100vh; /* 1vh=1% of viewpoint (size of browser windows)*/
@@ -9,6 +8,7 @@ header{
     background-position: center;
 }
 
+/* ------------------------*/ /* ---------->>> NAV <<<-----------*/ /* ------------------------*/
 .main-nav{
     float: right;
     list-style-type:none;
@@ -35,4 +35,9 @@ header{
 .row{
     max-width: 1200px;
     margin:auto;
+}
+/* ------------------------*/ /* ---------->>>END-NAV <<<-----------*/ /* ------------------------*/
+p { font-family: Arial, Verdana, Helvetica, sans-serif; }
+body{
+    font-size: 62.5%;
 }
