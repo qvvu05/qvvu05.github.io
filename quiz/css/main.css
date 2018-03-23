@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1000px;
+    border: 2px solid blanchedalmond;
+}
+
+#question{
+    width: 50%;
+    height: 30px;
+    border: 2px solid salmon;
+}
+
+/* #ans1, #ans2, #ans3, #ans4{
+    width: 50%;
+    height: 30px;
+    border: 2px solid salmon;
+} */
