@@ -36,7 +36,6 @@ for(var i=0; i<arr.length;i++){
     document.getElementsByClassName('ans_span')[2].innerHTML = arr[i].A3;
     document.getElementsByClassName('ans_span')[3].innerHTML = arr[i].A4;
     
-    
     if (document.getElementsByClassName('ans')[0].checked == true) {
         alert('I am ok')
     }

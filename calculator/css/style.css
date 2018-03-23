@@ -18,7 +18,8 @@
     width: 25%;
     height: 30px;
     margin:-2px;
-    background-color: greenyellow;
+    background-color: whitesmoke;
+    border-radius: 5px;
 }
 
 .last-row{
