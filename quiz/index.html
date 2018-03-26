@@ -12,13 +12,14 @@
     <div class="container">
         <h1>Quiz</h1>
         <form>
-            <div id="question"></div>
-            <button onclick="count(this.innerText);" id="ansA"></button>
-            <button onclick="count(this.innerText);" id="ansB"></button>
-            <button onclick="count(this.innerText);" id="ansC"></button>
-            <button onclick="count(this.innerText);" id="ansD"></button>
+            <div id='question'></div>
+            <button type="button" onclick='count(this.innerText)' class="ans ans-greenyellow" id='ansA'></button>
+            <button type="button" onclick='count(this.innerText)' class="ans ans-bisque" id='ansB'></button>
+            <button type="button" onclick='count(this.innerText)' class="ans ans-rosybrown" id='ansC'></button>
+            <button type="button" onclick='count(this.innerText)' class="ans" id='ansD'></button>
+            <p id='indexofques'></p>
         </form>
     </div>
     <script src="js/main.js"></script>
-</body>
+</body>              
 </html>
