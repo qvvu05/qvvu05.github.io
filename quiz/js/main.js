@@ -1,43 +1,75 @@
-var arr=[];
-arr[0]={
-    Q:'Paris là thủ đô nước nào ',
-    A1:'Pháp',
-    A2:'Mỹ',
-    A3:'Đức',
-    A4:'Nhật Bản'
+
+
+// setQues[0] = makeQuestion('Paris là thủ đô nước nào?', 'Pháp', 'Mỹ', 'Đức', 'Nhật Bản','Pháp');
+// setQues[1] = makeQuestion('Việt Nam có bao nhiêu dân tộc?', '54', '64', '55', '44', '54');
+// setQues[2] = makeQuestion('Chó có bao nhiêu chân?', '1', '2', '3', '4', '4');
+// setQues[3] = makeQuestion('SeaGame của khu vực nào', 'Đông Nam Á', 'EU', 'Mỹ La tinh', 'Bắc Âu', 'Đông Nam Á');
+
+var setQues=[];
+var mark = 0;
+var ques = 0;
+
+setQues[0]= {
+    question:'Paris là thủ đô nước nào?',
+    a: 'Pháp',
+    b:'Mỹ', 
+    c:'Đức', 
+    d:'Nhật Bản', 
+    ans:'Pháp'
+};
+setQues[1]={
+    question: 'Việt Nam có bao nhiêu dân tộc?', 
+    a:'54', 
+    b:'64', 
+    c:'55', 
+    d:'44', 
+    ans:'54'
 };
 
-arr[1] = {
-    Q: 'Việt Nam có bao nhiêu dân tộc?',
-    A1: '54',
-    A2: '64',
-    A3: '55',
-    A4: '44'
+setQues[2]= {
+    question:'Chó có bao nhiêu chân?', 
+    a:'1', 
+    b:'2',
+    c:'3',
+    d: '4', 
+    ans:'4'
 };
-arr[2] = {
-    Q: 'Chó có bao nhiêu chân?',
-    A1: '1',
-    A2: '2',
-    A3: '3',
-    A4: '4'
-};
-arr[3] = {
-    Q: 'SeaGame của khu vực nào',
-    A1: 'Đông Nam Á',
-    A2: 'EU',
-    A3: 'Mỹ La tinh',
-    A4: 'Bắc Âu'
+setQues[3] = {
+    question:'SeaGame của khu vực nào', 
+    a:'Đông Nam Á', 
+    b:'EU',
+    c: 'Mỹ La tinh',
+    d: 'Bắc Âu',
+    ans: 'Đông Nam Á'
 };
 
-for(var i=0; i<arr.length;i++){
-    document.getElementById('question').innerHTML = arr[i].Q;
-    document.getElementsByClassName('ans_span')[0].innerHTML = arr[i].A1;
-    document.getElementsByClassName('ans_span')[1].innerHTML = arr[i].A2;
-    document.getElementsByClassName('ans_span')[2].innerHTML = arr[i].A3;
-    document.getElementsByClassName('ans_span')[3].innerHTML = arr[i].A4;
-    
-    if (document.getElementsByClassName('ans')[0].checked == true) {
-        alert('I am ok')
-    }
 
+function makeQuestion(i) {
+    document.getElementById('question').innerText = setQues[i].question
+    document.getElementById('ansA').innerText = setQues[i].a
+    document.getElementById('ansB').innerText = setQues[i].b
+    document.getElementById('ansC').innerText = setQues[i].c
+    document.getElementById('ansD').innerText = setQues[i].d
 }
+
+
+function count(ans){
+    if (ans==setQues[0].ans) {
+        
+        mark++;
+        alert('your mark: '+mark);
+    }
+    else{
+        alert('your mark: ' + mark);
+    }
+    
+    if(ques<setQues.length){
+        ques = ques + 1;
+        alert('ques inside count function: ' + ques);
+        makeQuestion(ques);
+    }
+}
+
+alert('global ques: ' + ques);
+
+makeQuestion(ques);
