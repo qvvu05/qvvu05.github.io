@@ -37,6 +37,15 @@ setQues[3] = {
     ans: 'Đông Nam Á'
 };
 
+setQues[4] = {
+    question: 'Ai là người đẹp trai nhất ở TechMaster?',
+    a: 'Quyền',
+    b: 'Hào',
+    c: 'Trung',
+    d: 'Cường',
+    ans: 'Quyền'
+};
+
 
 function makeQuestion(idx) {
     document.getElementById('question').innerHTML = setQues[idx].question;
