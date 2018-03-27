@@ -30,6 +30,8 @@ body{
     font-size: 2em;
     background-color: honeydew;
     border-radius: 10px;
+    padding-top:10px;
+    padding-bottom: 10px;
 }
 
 /* #ans1, #ans2, #ans3, #ans4{
@@ -45,6 +47,8 @@ body{
     height: 3em;
     border: 1px solid gold;
     border-radius: 10px;
+    padding-top:10px;
+    padding-bottom: 10px;
 }
 .ans-greenyellow{
     background-color: greenyellow;

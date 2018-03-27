@@ -83,6 +83,7 @@ function changetheme(){
     if(theme==1){
         $('.ans').css('background-color', 'green');
         $('.ans').css('font-size', '2em');
+        $('.ans').css('color', 'blue');
         $('#question').css('padding-top', '10px');
         $('#question').css('padding-bottom', '10px');
         theme=2;
@@ -90,6 +91,7 @@ function changetheme(){
     else if(theme==2){
         $('.ans').css('background-color', 'white');
         $('.ans').css('font-size', '2em');
+        $('.ans').css('color', 'red');
         $('#question').css('padding-top', '10px');
         $('#question').css('padding-bottom', '10px');
         theme=3;
@@ -98,6 +100,7 @@ function changetheme(){
     else {
         $('.ans').css('background-color', 'yellow');
         $('.ans').css('font-size', '2em');
+        $('.ans').css('color', 'blue');
         $('#question').css('padding-top', '10px');
         $('#question').css('padding-bottom', '10px');
         theme = 1;
