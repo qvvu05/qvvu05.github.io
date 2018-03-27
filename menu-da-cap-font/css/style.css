@@ -1,0 +1,122 @@
+*{
+	box-sizing: border-box;
+	margin: auto;
+	padding: 0;
+}
+
+
+body{
+	font-family: 'Andika', sans-serif;
+	background-color:gainsboro;
+}
+
+img{
+	width: 100%;
+}
+
+.container{
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 0;
+	border: 1px solid white;
+}
+
+.banner{
+	margin:auto;
+	margin-top: 40px;
+	max-width: 100%;
+}
+
+.banner img{
+	max-width: 100%;
+}
+
+.navigation li a{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: courier;
+}
+
+
+ul.navigation{
+	display: inline;
+	
+}
+
+ul.navigation li{
+	
+	 position: relative;
+	 display: inline-block;
+	 padding: 0 40px;
+	 color: green;
+}
+
+ul.navigation li a{
+	line-height: 40px;
+	display: block;
+	text-transform: uppercase;
+    color: blueviolet;
+}
+
+
+ul.navigation li .sub-menu{
+    display: none;
+    position: absolute;
+    width: 220px;
+    top: 40px;
+    left: 20px;
+	background-color: #ccc;
+	text-align: center;
+}
+
+ul.navigation li:hover .sub-menu{
+	display: block;
+	text-align: center;
+}
+
+.clear{
+	clear: both;
+}
+
+
+
+.tin-noi-bat{
+	position: relative;
+	border: 1px solid white;
+}
+
+
+.box{
+	/*border: 5px solid blue;*/
+	float:left;
+	width: 33.3333%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.box img{
+	transition: transform 0.5s linear;
+}
+
+.box img:hover{
+	transform: scale(1.2);
+}
+
+
+p{
+ 	margin-top: 30px;
+	/*font-family: courier;*/
+	/* text-transform: uppercase; */
+	font-weight: bold;
+	font-size: 2em;
+	padding-left: 35px;
+}
+p.name_food{
+	font-size: 1.2em;
+	color: cadetblue;
+	text-align: center;
+	padding-left: 0;
+}
+/*Menu*/
+
