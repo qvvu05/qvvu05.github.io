@@ -77,10 +77,30 @@ function count(val) {
 
 var num = 0;
 makeQuestion(num);
+var theme=1;
 
 function changetheme(){
-    $('.ans').css('background-color','green');
-    $('.ans').css('font-size', '2em');
-    $('#question').css('padding-top', '10px');
-    $('#question').css('padding-bottom', '10px');
+    if(theme==1){
+        $('.ans').css('background-color', 'green');
+        $('.ans').css('font-size', '2em');
+        $('#question').css('padding-top', '10px');
+        $('#question').css('padding-bottom', '10px');
+        theme=2;
+    }
+    else if(theme==2){
+        $('.ans').css('background-color', 'white');
+        $('.ans').css('font-size', '2em');
+        $('#question').css('padding-top', '10px');
+        $('#question').css('padding-bottom', '10px');
+        theme=3;
+    }
+
+    else {
+        $('.ans').css('background-color', 'yellow');
+        $('.ans').css('font-size', '2em');
+        $('#question').css('padding-top', '10px');
+        $('#question').css('padding-bottom', '10px');
+        theme = 1;
+    }
+
 }
