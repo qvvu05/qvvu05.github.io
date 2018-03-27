@@ -24,7 +24,7 @@ body{
 
 #question{
     width: 50%;
-    height: 2.2em;
+    /* height: 2.2em; */
     border: 2px solid salmon;
     text-align: center;
     font-size: 2em;
@@ -60,4 +60,13 @@ body{
     opacity: 0.8;
     transition: opacity 0.2s linear;
     font-weight: bold;
+}
+
+
+/*----------------------Change Theme-----------------------*/
+#theme{
+    float: right;
+    border-radius: 10px;
+    height: 30px;
+    padding: 5px;
 }
