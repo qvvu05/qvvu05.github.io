@@ -37,7 +37,7 @@
 
 		<form action="succesful.html" id="register-form">
 			<fieldset>
-				<legend style="color:black; font-weight:bold;">Thông Tin Đăng Ký</legend>
+				<legend style="color:black; font-weight:bold;text-align:center;">Thông Tin Đăng Ký</legend>
 				<br>
 				<p>Họ Và Tên</p>
 				<input type="text" id="name" name="Name"><span id="name_error"></span>
@@ -62,14 +62,14 @@
 				<p>Địa chỉ</p>
 				<input type="text" name="address"><span id="address_error"></span>
 				<br><br>
-				 <p>Số điện thoại(ít nhất 9 số)</p>
-				<input type="number" name="phone" ><span id="phone_error"></span>
+				 <p>Số điện thoại:</p>
+				<input type="number" name="phone" placeholder="Ít nhất 9 chữ số" ><span id="phone_error"></span>
 				<br><br>
 				<p>Email</p>
-				<input type="email" name="email" ><span id="email_error"></span>
+				<input type="email" name="email" placeholder="abc@xyz.com"><span id="email_error"></span>
 				<br><br>
 				<p>Password</p>
-				<input type="password" name="password"><span id="password_error"></span>
+				<input type="password" name="password" placeholder="ít nhất 6 ký tự"><span id="password_error"></span>
 				<br>
 				<input type="submit" value="Register">
 
