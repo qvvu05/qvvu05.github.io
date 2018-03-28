@@ -13,7 +13,7 @@ input{
     height: 2.5em;
     width: 98%;
     margin-top: 10px;
-    border-radius: 10px;
+    border-radius: 21px;    /*default search box on twitter*/
     border: 1px solid gold;
     padding-left: 10px;
 }
