@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Đăng Ký Thành Viên</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+</head>
+
+<body>
+
+	<ul class="main-nav">
+		<li>
+			<a href="">Menu</a>
+		</li>
+		<li>
+			<a href="">Services</a>
+		</li>
+		<li>
+			<a href="">Contact</a>
+		</li>
+		<li>
+			<a href="">News</a>
+		</li>
+		<li>
+			<a href="">FAQ</a>
+		</li>
+	</ul>
+
+	<!-- End of menu-row -->
+
+	<div class="container">
+
+		<form action="succesful.html" id="register-form">
+			<fieldset>
+				<legend style="color:black; font-weight:bold;">Thông Tin Đăng Ký</legend>
+				<br>
+				<p>Họ Và Tên</p>
+				<input type="text" id="name" name="Name"><span id="name_error"></span>
+				<br>
+				<br>
+				<p>Ngày Sinh</p>
+				<input type="date" id="date_of_birth" name="date" ><span id="date_of_birth_error"></span>
+				<!-- <input placeholder="Date" class="textbox-n" type="text" onfocusout="(this.type='text'); " onfocus="(this.type='date')" 
+				 of id="date">-->
+
+				<br><br>
+				<p>Giới Tính:</p>
+				<input type="radio" name="gender" id="male" value="male">
+				<label for="male">Nam</label>
+				<input type="radio" name="gender" id="female" value="female">
+				<label for="female">Nữ</label>
+				<input type="radio" name="gender" id="other" value="other">
+				<label for="other">Chưa kiểm tra</label>
+				<span id="gender_error"></span>
+				<br>
+				<br>
+				<p>Địa chỉ</p>
+				<input type="text" name="address"><span id="address_error"></span>
+				<br><br>
+				 <p>Số điện thoại(ít nhất 9 số)</p>
+				<input type="number" name="phone" ><span id="phone_error"></span>
+				<br><br>
+				<p>Email</p>
+				<input type="email" name="email" ><span id="email_error"></span>
+				<br><br>
+				<p>Password</p>
+				<input type="password" name="password"><span id="password_error"></span>
+				<br>
+				<input type="submit" value="Register">
+
+			</fieldset>
+		</form>
+
+	</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
