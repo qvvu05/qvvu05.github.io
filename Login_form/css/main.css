@@ -1,0 +1,28 @@
+/* ------------------------*/ /* ---------->>> GLOBAL <<<-----------*/ /* ------------------------*/
+
+body{
+    background-image: url("../img/background.jpg");
+    height: 100vh; /* 1vh=1% of viewpoint (size of browser windows)*/
+    background-size: cover;
+    background-position: center;
+}
+
+/* ------------------------*/ /* ---------->>> MAIN_NAV <<<-----------*/ /* ------------------------*/
+ul.main-nav{
+    list-style-type: none;
+    margin-top: 20px;
+    margin-right: 50px;
+    float: right; /* đưa menu sang bên phải. nhưng vẫn giữ nguyên thứ tự. Nếu cho float: right vào li thì sẽ sắp xếp ngược lại.*/
+}
+
+.main-nav li{
+    display: inline-block; /* cho các thành phần trong menu ngang hàng nhau*/
+    margin-right: 30px;
+}
+
+.main-nav li a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+/* ------------------------*/ /* ---------->>> END OF MAIN_NAV <<<-----------*/ /* ------------------------*/
