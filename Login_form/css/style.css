@@ -32,3 +32,7 @@ input[type=submit] {
     transform: translateX(-50%);
     box-sizing: border-box;
 }
+
+fieldset{
+    border-width: 0;
+}
