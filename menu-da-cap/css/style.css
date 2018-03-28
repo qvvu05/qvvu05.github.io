@@ -92,6 +92,7 @@ ul.navigation li:hover .sub-menu{
 	width: 33.3333%;
 	margin: auto;
 	overflow: hidden;
+	border-radius: 5px;
 }
 
 .box img{
