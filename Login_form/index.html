@@ -38,12 +38,16 @@
 
 		<form action="">
 			<fieldset>
-				<legend>Thông Tin Đăng Ký</legend>
-				<input type="text" placeholder="Họ Và Tên">
+				<legend style="color:black; font-weight:bold;">Thông Tin Đăng Ký</legend>
 				<br>
-				<!-- <input type="date" placeholder="Ngày sinh"> -->
-				<input placeholder="Date" class="textbox-n" type="text" onfocusout="(this.type='text'); this.placeholder='Date'" onfocus="(this.type='date')"
-				 of id="date">
+				<p>Họ Và Tên</p>
+				<input type="text">
+				<br>
+				<br>
+				<p>Ngày Sinh</p>
+				<input type="date">
+				<!-- <input placeholder="Date" class="textbox-n" type="text" onfocusout="(this.type='text'); " onfocus="(this.type='date')" 
+				 of id="date">-->
 
 				<br>
 				<input type="radio" name="gender" id="male">
@@ -53,15 +57,20 @@
 				<input type="radio" name="gender" id="other">
 				<label for="other">Chưa kiểm tra</label>
 				<br>
-				<input type="text" name="address" placeholder="Địa chỉ">
 				<br>
-				<input type="number" name="phone" placeholder="Số điện thoại">
+				<p>Địa chỉ</p>
+				<input type="text" name="address">
+				<br><br>
+				 <p>Số điện thoại</p>
+				<input type="number" name="phone" >
+				<br><br>
+				<p>Email</p>
+				<input type="email" name="email" >
+				<br><br>
+				<p>Password</p>
+				<input type="password" name="password">
 				<br>
-				<input type="email" name="email" placeholder="Email">
-				<br>
-				<input type="password" name="password" placeholder="Password">
-				<br>
-				<input type="submit" value="submit">
+				<input type="submit" value="Register">
 
 			</fieldset>
 		</form>
