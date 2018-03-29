@@ -10,10 +10,26 @@
     <div id="inform"></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/main.js"></script>
     <script>
-        
+       function GetURLParameter(sParam) {
+            var sPageURL = window.location.href ;//get URL
+            // console.log('URL: '+sPageURL);
+            sPageURL=sPageURL.split('?')[1];//split URL by question mark, take the second element(user input)
+            // console.log('URL: ' + sPageURL);
+            var sURLVariables = sPageURL.split('&');//seperate by & to get variable and value
+            // console.log('URL_VARIABLE: '+sURLVariables);
+            for (var i = 0; i < sURLVariables.length; i++) {//loop through all variable=value pair
+                var sParameterName = sURLVariables[i].split('=');//for each pair, split by =
+                if (sParameterName[0] == sParam) {//compare the first part(variable) vs pattern that we are searching
+                    return decodeURIComponent(sParameterName[1]);//return value
+                }
+            }
+        }
 
+        var fullname = GetURLParameter('fullname');
+        var birthday = GetURLParameter('birthday');
+        $('#inform').append(fullname);
+        $('#inform').append(birthday);
     </script>
 </body>
 </html>
