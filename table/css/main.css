@@ -4,12 +4,13 @@
     box-sizing: border-box;
 }
 body{
-      background: linear-gradient(to right, #5eff002d , yellow);
+      background: linear-gradient(to right, #5eff002d , rgba(231, 229, 222, 0.068));
 }
 table, th, tr, td{
     padding: 10px;
-    border: 1px solid black;
+    border: 5px dotted yellowgreen;
     border-collapse: collapse;
+
 }
 
 tr:hover{
@@ -23,9 +24,12 @@ img{
 
 thead{
     font-weight: bold;
+    font-size: 2em;
+    border-radius: 10px;
 }
 
 input{
+    
     border: none;
     font-weight: bold;
     background: transparent;
