@@ -47,15 +47,15 @@
         }
 
         var fullname = GetURLParameter('fullname');
-        $('#inform').append('<p>Họ Và Tên: ' + fullname.replace('+',' ') + '</p>');
+        $('#inform').append('<p>Họ Và Tên: ' + fullname.replace('+', ' ') + '</p>');
         var birthday = GetURLParameter('birthday');
         $('#inform').append('<p>Ngày Sinh: ' + birthday + '</p>');
         var gender = GetURLParameter('gender');
-        if(gender!=undefined){//because gender is radio
-                    $('#inform').append('<p>Giới Tính: ' + gender.replace(/[+]/g, ' ') + '</p>');
-                    /*in replace method: /[+]/g mean that: replace all + inside this variable (g=global)/*/
-        }else{
-                    $('#inform').append('<p>Giới Tính: </p>');
+        if (gender != undefined) {//because gender is radio
+            $('#inform').append('<p>Giới Tính: ' + gender.replace(/[+]/g, ' ') + '</p>');
+            /*in replace method: /[+]/g mean that: replace all + inside this variable (g=global)/*/
+        } else {
+            $('#inform').append('<p>Giới Tính: </p>');
         }
 
         var address = GetURLParameter('address');

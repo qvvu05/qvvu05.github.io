@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Table</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    
-</head>
-<body>
-<table>
-    <thead>
-        <th>Avatar</th>
-        <th> <input type="button" value="name"> Name</th>
-        <th>Gender</th>
-        <th>Email</th>
-        <th>Phone</th>
-    </thead>
-    <tbody>
 
-    </tbody>
-</table>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="js/main.js"></script>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <th>Avatar</th>
+            <th>
+                <input type="button" value="Name" onclick="getVal(this); showData(); nameDirection  *=(-1); console.log(property)"> </th>
+            <th>
+                <input type="button" value="Gender" onclick="getVal(this); showData(); genderDirection*=(-1); console.log(property)"> </th>
+            </th>
+            <th>
+                <input type="button" value="Email" onclick="getVal(this); showData(); emailDirection*=(-1); console.log(property)"> </th>
+            </th>
+            <th>
+                <input type="button" value="Phone" onclick="getVal(this); showData(); phoneDirection *=(-1); console.log(property)"> </th>
+            </th>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>

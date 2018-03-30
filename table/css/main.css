@@ -3,6 +3,9 @@
     margin: 0 auto;
     box-sizing: border-box;
 }
+body{
+      background: linear-gradient(to right, #5eff002d , yellow);
+}
 table, th, tr, td{
     padding: 10px;
     border: 1px solid black;
@@ -10,10 +13,23 @@ table, th, tr, td{
 }
 
 tr:hover{
-    font-weight: bold;
+    background-color: bisque
 }
 
 img{
     width: 100px;
     height: 100px;
+}
+
+thead{
+    font-weight: bold;
+}
+
+input{
+    border: none;
+    font-weight: bold;
+    background: transparent;
+}
+*:focus{
+    outline: none;
 }
