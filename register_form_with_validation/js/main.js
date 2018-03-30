@@ -36,7 +36,7 @@ $('#register-form').on('submit',function(){
     }
 
     //check phone number
-    if( $("input[name='phone']").val().length < 9 ){
+    if ($("input[name='phone']").val().length < 10 || $("input[name='phone']").val().length>11 ){
         $('#phone_error').html("<b style='color:red;'>Phone number is invalid</b>");
         isValid=false;
     }else{
