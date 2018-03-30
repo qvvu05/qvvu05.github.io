@@ -33,6 +33,10 @@ input[type=submit] {
     box-sizing: border-box;
 }
 
+*:focus{
+    outline: none;
+}
+
 fieldset{
     border-width: 0;
 }

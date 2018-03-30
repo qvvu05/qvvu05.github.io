@@ -1,20 +1,40 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Register succesfully</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        #inform {
+            border: 2px solid black;
+            margin: auto;
+            padding: 20px;
+            /* text-align:center; */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+
 </head>
+
 <body>
-    <div id="inform"></div>
+    <div id="inform">
+        <h1>Thông tin đăng ký của bạn:</h1>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-       function GetURLParameter(sParam) {
-            var sPageURL = window.location.href ;//get URL
+
+        /* function is original at: http://www.jquerybyexample.net/2012/06/get-url-parameters-using-jquery.html*/
+        function GetURLParameter(sParam) {
+
+            var sPageURL = window.location.href;//get URL
             // console.log('URL: '+sPageURL);
-            sPageURL=sPageURL.split('?')[1];//split URL by question mark, take the second element(user input)
+            sPageURL = sPageURL.split('?')[1];//split URL by question mark, take the second element(user input)
             // console.log('URL: ' + sPageURL);
             var sURLVariables = sPageURL.split('&');//seperate by & to get variable and value
             // console.log('URL_VARIABLE: '+sURLVariables);
@@ -27,9 +47,19 @@
         }
 
         var fullname = GetURLParameter('fullname');
+        $('#inform').append('<p>Họ Và Tên: ' + fullname.replace('+',' ') + '</p>');
         var birthday = GetURLParameter('birthday');
-        $('#inform').append(fullname);
-        $('#inform').append(birthday);
+        $('#inform').append('<p>Ngày Sinh: ' + birthday + '</p>');
+        var gender = GetURLParameter('gender');
+        $('#inform').append('<p>Giới Tính: ' + gender.replace(/[+]/g, ' ') + '</p>');
+        /*in replace method: /[+]/g mean that: replace all + inside this variable (g=global)/*/
+        var address = GetURLParameter('address');
+        $('#inform').append('<p>Địa chỉ: ' + address.replace(/[+]/g, ' ') + '</p>');
+        var phone = GetURLParameter('phone');
+        $('#inform').append('<p>Số điện thoại: ' + phone + '</p>');
+        var email = GetURLParameter('email');
+        $('#inform').append('<p>Email: ' + email + '</p>');
     </script>
 </body>
+
 </html>
