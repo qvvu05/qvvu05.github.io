@@ -2,9 +2,10 @@
     padding: 0;
     margin: 0 auto;
     box-sizing: border-box;
+    /* font-family: 'Muli', sans-serif; */
 }
 body{
-    background: #f1f1f1;;
+    background: #22ee744b;
 }
 
 .clear{
@@ -17,6 +18,7 @@ body{
     /* height: 100vh; */
     position: relative;
     overflow:  auto;
+    background: #f1f1f1;
 }
 
 /* Header-nav */
@@ -24,14 +26,17 @@ header{
     width: 100%;
     /* border: 2px solid black; */
     display: table;
+    background: #24292e;
 }
 
 #slogan{
     width: 100%;
     text-align: center;
     font-size: 3em;
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Lobster', cursive; */
+    text-transform: uppercase;
     display: table-row;
+    color: khaki;
 }
 
 nav{
@@ -47,11 +52,14 @@ nav ul li{
     margin:20px;
     padding: 5px;
     text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
 }
 
 nav ul li:hover{
-    border: 2px solid whitesmoke;
-    border-radius: 5px;
+    /* border: 1px solid whitesmoke; */
+    background-color: gold;
+    border-radius: 21px;
 }
 
 nav ul li a{
@@ -70,8 +78,9 @@ nav ul li a{
 .menu__lv1:hover .menu__lv2{
     display: block;
     position: absolute;/*make whole item inside lv2 visible*/
-    background-color: whitesmoke;
-    /* border: 2px solid black; */
+    width: 100%;
+    background-color: gold;
+    border-radius: 21px;
 }
 .menu__lv1 .menu__lv2-item{
     display: block;
@@ -115,6 +124,13 @@ nav ul li a{
     /* height: 150px; */
 }
 
+.fouritems__item:hover{
+    transform: scale(1.1);
+    border: 5px solid goldenrod;
+    transition: transform 1s ease-in-out;
+    /* height: 150px; */
+}
+
 /* content */
 .main-content{
     width: 70%;
@@ -127,7 +143,7 @@ nav ul li a{
     height: 500px;
     overflow: hidden;
     display: inline-block;
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 21px;
     margin: 4%;
 }
@@ -147,9 +163,9 @@ nav ul li a{
 aside{
     width: 25%;
     float: right;
-    border: 2px solid black;
+    border: 5px solid goldenrod;
+    border-radius: 21px;
     position: absolute;
-    /* bottom: 1em; */
     right: 10px;
     margin-top: 50px;
 }
@@ -172,6 +188,11 @@ aside .profile img{
     transform: translateX(-50%);
 }
 
+aside a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
 aside p{
     margin-bottom: 3px;
     padding: 10px;
@@ -189,6 +210,11 @@ footer{
     width: 100%;
     position: absolute;
     bottom: 0;
-    background: beige;
+    background: #24292e;
+}
+footer p{
+    text-align:center;
+    font-weight:bold;
+    color: azure;
 }
 /* End of Footer */
