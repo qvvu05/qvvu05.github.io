@@ -47,7 +47,7 @@ body{
 }
 
 #banner{
-	max-height: 500px;
-	height: 30vh;
+	/* max-height: 500px; */
+	height: 300px;
 	overflow: hidden;
 }
