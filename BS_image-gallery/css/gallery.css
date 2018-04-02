@@ -1,0 +1,53 @@
+*{
+	/* padding: 0!important; */
+	box-sizing: border-box;
+}
+.clear{
+	clear: both;
+}
+
+body{
+	max-width: 1440px;
+	margin: auto !important;
+}
+
+.main-menu{
+	background-color: white;
+	text-align: center;
+}
+
+.main-menu a{
+	margin: 10px;
+	color: red;
+	font-size: 2em;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.box{
+	overflow: hidden;
+}
+
+.box:hover{
+
+	border-radius:21px;
+	cursor: pointer;
+	transform: scale(0.9);
+	transition: transform 1s linear;
+
+}
+
+.heading{
+	text-align: center;
+}
+
+.heading:hover{
+	text-shadow: 2px 2px #ff0000;
+	color: yellow;
+}
+
+#banner{
+	max-height: 500px;
+	height: 30vh;
+	overflow: hidden;
+}
