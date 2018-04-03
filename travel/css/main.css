@@ -126,7 +126,7 @@ ul li{
     0%,100%{transform: rotateY(-30deg)}
 }
 .main-content__item:hover{
-    /* transform: rotateY(360deg); */
+    cursor: pointer;
     animation: rotateAndInverse 1s linear;
 }
 .main-content__item--description{
