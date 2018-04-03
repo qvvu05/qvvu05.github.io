@@ -13,7 +13,7 @@ body{
 }
 
 #page{
-    max-width: 1000px;
+    width: 100%;
     border: 2px solid black;
     /* height: 100vh; */
     position: relative;
@@ -23,10 +23,11 @@ body{
 
 /* Header-nav */
 header{
-    width: 100%;
-    /* border: 2px solid black; */
+    background-image: url('img/banner-halongbay.jpg');
+    background-size: cover;
+    /* width: 100%;
     display: table;
-    background: #24292e;
+    background: #24292e; */
 }
 
 #slogan{
