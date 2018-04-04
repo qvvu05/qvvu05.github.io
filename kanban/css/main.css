@@ -1,3 +1,28 @@
 .fas{
     float: right;
 }
+
+.newjob{
+    padding-left: 10px!important;
+    width: 85%!important;
+    display: inline-block;
+}
+#newjob{
+    position: relative;
+}
+#addButton{
+    width: 10%;
+    
+    position: absolute;
+    /* top:50%; */
+    /* transform: translateY(-50%); */
+}
+
+i.left{
+    margin-right:0;
+}
+
+.collection .collection-item{
+    display: inline-block!important;
+    width: 66%;
+}

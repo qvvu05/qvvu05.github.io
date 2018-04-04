@@ -149,7 +149,7 @@ ul li{
     /* transform: translateY(-50%); */
     width: 20%;
     overflow: auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: inline-block;
 }
 

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Kanban Board</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--AWESOMEFONT-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1"
@@ -12,7 +12,9 @@
     <!--jQueryUI CSS-->
     <link rel="stylesheet" href="libraries/jqueryui/jquery-ui.min.css">
     <!--Materialize: Compiled and minified CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <!-- <link rel="stylesheet" href="libraries/materialize/css/materialize.css"> -->
     <!--user css-->
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
 
@@ -31,14 +33,25 @@
                 <div class="card">
                     <h5>TO DO</h5>
                     <div class="collection connectedSortable">
-                        <a href="#!" class="collection-item">Hoàn thành khóa học frontend <i class="fas fa-trash-alt"></i></a>
-                        <a href="#!" class="collection-item">Học thêm golang <i class="fas fa-trash-alt"></i></a>
-                        <a href="#!" class="collection-item">Học thêm về database <i class="fas fa-trash-alt"></i></a>
-                        <a href="#!" class="collection-item">Học thêm về algorithm <i class="fas fa-trash-alt"></i></a>
-                        <!-- <a href="#!" class="collection-item"></a>
-                        <a href="#!" class="collection-item"></a>
-                        <a href="#!" class="collection-item"></a> -->
-                        <input type="text" placeholder="newjob">
+                        <a href="#!" class="collection-item">Hoàn thành khóa học frontend
+                            <i class="fas fa-trash-alt"></i>
+                        </a>
+                        <a href="#!" class="collection-item">Học thêm golang
+                            <i class="fas fa-trash-alt"></i>
+                        </a>
+                        <a href="#!" class="collection-item">Học thêm về database
+                            <i class="fas fa-trash-alt"></i>
+                        </a>
+                        <a href="#!" class="collection-item">Học thêm về algorithm
+                            <i class="fas fa-trash-alt"></i>
+                        </a>
+                        <div id="newjob">
+                            <input class="newjob" type="text" placeholder="Tạo công việc mới">
+        <a class="btn-floating btn-large waves-effect waves-light red">
+            <i class="material-icons">add</i>
+        </a>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -47,10 +60,41 @@
                 <div class="card">
                     <h5>Doing</h5>
                     <div class="collection connectedSortable">
-                        <a href="#!" class="collection-item">DOING1</a>
-                        <a href="#!" class="collection-item">DONE2</a>
-                        <a href="#!" class="collection-item">DONE3</a>
-                        <a href="#!" class="collection-item">DONE4</a>
+                        <a href="#!" class="collection-item">DOING1
+                            <a class="waves-effect waves-light btn-small">
+                                <i class="material-icons left">arrow_back</i>
+                            </a>
+                            <a class="waves-effect waves-light btn-small">
+                                <i class="material-icons left">arrow_forward</i>
+                            </a>
+                        </a>
+                        <a href="#!" class="collection-item">DOING2
+                            <a class="waves-effect waves-light btn-small">
+                                <i class="material-icons left">arrow_back</i>
+                            </a>
+                            <a class="waves-effect waves-light btn-small">
+                                <i class="material-icons left">arrow_forward</i>
+                            </a>
+
+                        </a>
+                        <a href="#!" class="collection-item">DOING3
+                            <a class="waves-effect waves-light btn-small">
+                                <i class="material-icons left">arrow_back</i>
+                            </a>
+                            <a class="waves-effect waves-light btn-small">
+                                <i class="material-icons left">arrow_forward</i>
+                            </a>
+                        </a>
+                        <a href="#!" class="collection-item">DOING4
+
+                            <a class="waves-effect waves-light btn-small">
+                                <i class="material-icons left">arrow_back</i>
+                            </a>
+                            <a class="waves-effect waves-light btn-small">
+                                <i class="material-icons left">arrow_forward</i>
+                            </a>
+
+                        </a>
                     </div>
                 </div>
             </div>
@@ -59,10 +103,18 @@
                 <div class="card">
                     <h5>DONE</h5>
                     <div class="collection connectedSortable">
-                        <a href="#!" class="collection-item">DONE1</a>
-                        <a href="#!" class="collection-item">DONE2</a>
-                        <a href="#!" class="collection-item">DONE3</a>
-                        <a href="#!" class="collection-item">DONE4</a>
+                        <a href="#!" class="collection-item">DONE1
+                            <i class="fas fa-trash-alt"></i>
+                        </a>
+                        <a href="#!" class="collection-item">DONE2
+                            <i class="fas fa-trash-alt"></i>
+                        </a>
+                        <a href="#!" class="collection-item">DONE3
+                            <i class="fas fa-trash-alt"></i>
+                        </a>
+                        <a href="#!" class="collection-item">DONE4
+                            <i class="fas fa-trash-alt"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -76,6 +128,7 @@
     <script src="libraries/jqueryui/jquery-ui.min.js"></script>
     <!--Materialize: Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <!-- <script src="libraries/materialize/js/materialize.js"></script> -->
     <!--user script-->
     <script src="js/main.js"></script>
 </body>
