@@ -65,12 +65,7 @@ header{
     margin:0;
     display:inline-block;
 }
-/* @media only screen and (max-width: 425px) {
-    #dragon{
-        display: none!important;
-    }
-}
- */
+
 
 #dragon{
     padding-top: 20px;
@@ -81,10 +76,6 @@ header{
         display: none!important;
     }
 
-/* #dragon{
-    padding-top: 20px;
-    width: 5vw;
-} */
 
 #halongbay{
     /* position: absolute; */
@@ -306,11 +297,36 @@ ul li{
 
 /***********************************************************Smartphone************************************************************************/
 @media only screen and (max-width:425px){
-    
-    .noibat{
-        text-align: center;
-        width: 100%;
+    .header__slogan--box{
+        bottom: 5px;
+        width:  25vw;
     }
+    
+    .header__slogan--box--content{
+        /* display: none; */
+        width:  25vw;
+        padding-left: 9px;
+    }
+
+#discover{
+    color: ghostwhite;
+    font-size:3vw;
+    margin:0;
+    display:inline-block;
+}
+
+
+#dragon{
+    padding-top: 0; 
+}
+
+    #halongbay{
+        font-size:4vw;
+        margin-bottom:0;
+        margin-top: 0;
+
+    }
+
 
     #noibat-title{
         margin-top: 15px!important;
