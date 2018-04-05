@@ -21,7 +21,7 @@
 <body>
     <nav>
         <div class="nav-wrapper" id="topHere">
-            <a href="#" class="brand-logo">Go with me</a>
+            <a href="#" class="brand-logo  shake">Go with me</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down menu">
                 <li class="menu-lv1">
                     <a href=""> Điểm thăm quan
@@ -82,17 +82,24 @@
     </nav>
 
     <header>
-        <div class="header__slogan">
-            <h2>DISCOVER
-                <i class="fab fa-d-and-d fa-4x"></i>
-            </h2>
-            <h1> Halong Bay </h1>
+        <div class="header__background">
+            <img src="img/banner-halongbay.jpg" alt="">
+        </div>
+
+        <div class="header__slogan--box">
+            <div class="header__slogan--box--content">
+                <h2 id="discover">DISCOVER</h2>
+                <i id="dragon" class="fab fa-d-and-d fa-4x"></i>
+
+                <h1 id="halongbay"> Halong Bay </h1>
+
+            </div>
         </div>
     </header>
 
     <div class="container-fluid">
         <div class="noibat">
-            <h1>Nổi Bật</h1>
+            <div class="shake" id="noibat-title">Nổi Bật</div>
             <div class="row fouritems">
                 <div class="col s12 m6 l3 fouritems__item">
                     <img src="img/tuanchaubeach.jpg" alt="Tuan Chau Beach">
@@ -114,27 +121,28 @@
         </div>
         <!--End of class noibat-->
         <div class="main-body">
-            <h2 style="text-align:center;padding-right:30%">Our adventure</h2>
+            <!-- <h2 id="body__title" >Our adventure</h2> -->
             <div class="main-content">
+                <h2 id="body__title">Our adventure</h2>
                 <div class="main-content__item">
                     <img src="img/baitho1.jpg" alt="Chua Cai Bau">
-                    <h5 class="main-content__item--description">20/01/2017</h5>
+                    <h5 class="main-content__item--date">20/01/2017</h5>
                     <h4 class="main-content__item--description">Núi Bài Thơ</h4>
                 </div>
                 <div class="main-content__item">
                     <img src="img/halong.JPG" alt="Chua Cai Bau">
-                    <h5 class="main-content__item--description">17/09/2017</h5>
+                    <h5 class="main-content__item--date">17/09/2017</h5>
                     <h4 class="main-content__item--description">T.P Hạ Long</h4>
                 </div>
                 <div class="main-content__item">
                     <img src="img/baichay1.JPG" alt="Chua Cai Bau">
-                    <h5 class="main-content__item--description">19/01/2018</h5>
+                    <h5 class="main-content__item--date">19/01/2018</h5>
                     <h4 class="main-content__item--description">Biển Bãi Cháy</h4>
 
                 </div>
                 <div class="main-content__item">
                     <img src="img/CaiBau1.jpg" alt="Chua Cai Bau">
-                    <h5 class="main-content__item--description">19/02/2018</h5>
+                    <h5 class="main-content__item--date">19/02/2018</h5>
                     <h4 class="main-content__item--description">Chùa Cái Bầu</h4>
                 </div>
             </div>
@@ -144,9 +152,11 @@
                 <p style="text-align:center; padding-left:0;font-weight:bold;font-size:2em;">
                     <b>About me</b>
                 </p>
-                <div class="profile">
-                    <img src="img/profile.jpg" alt="">
-                </div>
+                
+                    <div class="profile">
+                        <img src="img/square_profile.png" alt="">
+                    </div>
+                
                 <p style="text-align: center; padding:5px;">Quyền (25 tuổi). Yêu lập trình và thích Gái đẹp.</p>
                 <p style="text-align:left;padding-left:0;">Trong thời đại công nghệ, địa chỉ mạng xã hội đáng giá hàng trang giới thiệu. Vậy nên hãy ghé thăm trang
                     cá nhân của tôi nhé </p>
@@ -184,8 +194,10 @@
 
 
     <footer class="page-footer">
-        <a href="#topHere"><i class="fas fa-chevron-up fa-3x backtotop"></i></a>
-        
+        <a href="#topHere">
+            <i class="fas fa-chevron-up fa-3x backtotop"></i>
+        </a>
+
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">

@@ -1,22 +1,99 @@
+@font-face{
+    font-family: baomoi;
+    src: url('../font/Baomoi_gdi.woff');
+}
+
 *{
     padding: 0;
     margin: 0 auto;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: baomoi,'Open Sans', sans-serif;
 }
 body{
     overflow: auto;
 }
+
+/******************************* Desktop **********************************/
+
 header{
-    background-image: url("../img/banner-halongbay.jpg");
+    position: relative;
+    padding: 0;
+    margin: 0;
     background-size: cover;
     background-color: bisque;
     background-position: center;
     width: 100%;
-    height: 435px;
     overflow: auto;
     position: relative;
     z-index: 1;
+}
+.header__background img{
+    width: 100%;
+}
+
+@keyframes changeSlogan{
+    0%,100%{ opacity: 1;}
+    50%{opacity: 0.8;}
+}
+
+.header__slogan--box{
+    margin-right: 0;
+    position: absolute;
+    width: 25vw;
+    height: 90%;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    align-items: center;
+    background-color: #ee6e734a;
+    animation: changeSlogan 2s linear infinite;
+}
+
+.header__slogan--box--content{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width:  25vw;
+    /* overflow:  auto; */
+    padding-left: 9px;
+}
+
+#discover{
+    color: ghostwhite;
+    font-size:3vw;
+    margin:0;
+    display:inline-block;
+}
+/* @media only screen and (max-width: 425px) {
+    #dragon{
+        display: none!important;
+    }
+}
+ */
+
+#dragon{
+    padding-top: 20px;
+    width: 5vw;
+   
+}
+ @media only screen and (max-width: 425px) {
+        display: none!important;
+    }
+
+/* #dragon{
+    padding-top: 20px;
+    width: 5vw;
+} */
+
+#halongbay{
+    /* position: absolute; */
+    color: ghostwhite;
+    bottom: 0;
+    font-size:5vw;
+    margin-bottom:0;
+    margin-top: 5px;
+    opacity: 1!important;
 }
 
 
@@ -52,17 +129,7 @@ ul li{
 
 /* end of menu */
 
-.header__slogan{
-    font-family: 'Open Sans', sans-serif;
-    color: ghostwhite;
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    font-size: 3em;
-    padding: 10px;
-    background-color: #dcd9d94f;
-}
+
 
 .container{
     width: 100%;
@@ -72,10 +139,12 @@ ul li{
     text-align: center;
     width: 100%;
 }
-
+#noibat-title{
+    margin-top: 15px!important;
+    font-size: 5vw;
+}
 .noibat .fouritems .fouritems__item{
     display: inline-block;
-    height: 300px;
     overflow: hidden;
 }
 
@@ -86,14 +155,19 @@ ul li{
 }
 
 .noibat .fouritems .fouritems__item p{
-    font-size: 1.5em;
-    transition: transform 1s linear;
+    font-size: 1.4vw;
+    transition: transform 1s linear; 
 }
+
+
+
+
 .noibat .fouritems .fouritems__item:hover p{
     color: ghostwhite;
     transform: translateY(-100px);
     transition: transform 1s linear;
 }
+
 .noibat .fouritems .fouritems__item img{   
     width: 100%;
 }
@@ -103,16 +177,20 @@ ul li{
     overflow: auto;
 }
 
+
+#body__title{
+    text-align:center;
+}
+
 .main-body .main-content{
     width: 79%;
-    /* height: 500px; */
     margin-left: 0;
     position: relative;
-    /* border: 1px solid black; */
     overflow: auto;
     display: inline-block;
     padding-top:  0;
 }
+
 
 .main-content__item{
     width: 45%;
@@ -129,27 +207,23 @@ ul li{
     cursor: pointer;
     animation: rotateAndInverse 1s linear;
 }
+.main-content__item--date{
+    text-align: center;
+}
 .main-content__item--description{
     text-align: center;
 }
+
 .main-content__item img{
     width: 100%;
     margin-top:0;
 }
 
-@media only screen and (max-width: 600px) {
-    .aside{
-        display: none!important;
-    }
-}
 .main-body .aside{
-    /* position: fixed; */
     position: absolute;
     top:0; right: 0;
-    /* transform: translateY(-50%); */
     width: 20%;
     overflow: auto;
-    /* border: 1px solid black; */
     display: inline-block;
 }
 
@@ -157,16 +231,22 @@ ul li{
     padding-top:5px;
     padding-left: 20%;
     padding-bottom: 5px;
-    font-weight: lighter;
+    font-weight: bold;
 }
 
 .profile{
+    width: 100%;
+    height: 30vh;
     position: relative;
-    margin-left:25%;
+    overflow: auto;
 }
 .profile img{
     width: 70%;
     border-radius:50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
 }
 
 .page-footer{
@@ -188,4 +268,76 @@ ul li{
     right: 10px;
     /* bottom: 80px; */
     top: 0;
+}
+
+@keyframes shakeout{
+    50%{
+        transform: rotateX(90deg);
+    }
+}
+.shake:hover{
+    animation: shakeout 1s linear;
+    cursor: pointer;
+}
+
+/*******************************************************Table***********************************************************/
+@media only screen and (max-width:768px){
+    .noibat .fouritems .fouritems__item p{
+        font-size:3vw;
+    }
+    
+    .main-body .main-content{
+        width: 100%;
+    }
+    .main-body #body__title{
+        text-align:center;
+    }
+    .aside{
+        display: none!important;
+    }
+
+    .main-content__item--date{
+        font-size: 2vw;
+    }
+    .main-content__item--description{
+       font-size: 3vw;
+    }
+}
+
+/***********************************************************Smartphone************************************************************************/
+@media only screen and (max-width:425px){
+    
+    .noibat{
+        text-align: center;
+        width: 100%;
+    }
+
+    #noibat-title{
+        margin-top: 15px!important;
+        font-size: 5vw;
+    }
+
+
+    .noibat .fouritems .fouritems__item p{
+        font-size:5vw;
+    }
+
+    .main-content__item{
+        width: 94%;
+        overflow: auto;
+        margin-top: 0!important;
+        margin: 2%;
+        display: inline-block;
+    }
+
+    .main-content__item--date{
+        font-size: 3vw;
+    }
+
+
+    .main-content__item--description{
+        font-size: 5vw;
+    }
+
+
 }
