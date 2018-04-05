@@ -27,8 +27,15 @@ header{
     position: relative;
     z-index: 1;
 }
+
+/* .header__background{
+    margin: 0;
+    padding: 0;
+} */
+
 .header__background img{
     width: 100%;
+
 }
 
 @keyframes changeSlogan{
@@ -212,7 +219,7 @@ ul li{
 
 .main-body .aside{
     position: absolute;
-    top:0; right: 0;
+    top:0; right: 1vw;
     width: 20%;
     overflow: auto;
     display: inline-block;
@@ -229,7 +236,7 @@ ul li{
     width: 100%;
     height: 30vh;
     position: relative;
-    overflow: auto;
+    overflow: hidden;
 }
 .profile img{
     width: 70%;
