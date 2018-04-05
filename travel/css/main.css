@@ -154,8 +154,6 @@ ul li{
 }
 
 
-
-
 .noibat .fouritems .fouritems__item:hover p{
     color: ghostwhite;
     transform: translateY(-100px);
@@ -285,15 +283,18 @@ ul li{
     #halongbay{
         font-size:4vw;
     }
-
-
     
+    .noibat .fouritems .fouritems__item p{
+        font-size: 2vw;
+    }
+
     .main-body .main-content{
         width: 100%;
     }
-    .main-body #body__title{
+
+    /* .main-body #body__title{
         text-align:center;
-    }
+    } */
 
     .aside{
         display: none!important;
