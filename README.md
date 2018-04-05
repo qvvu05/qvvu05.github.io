@@ -1,3 +1,4 @@
+###Git usage command:
 Tell Git who you are	Configure the author name and email address to be used with your commits.
 Note that Git strips some characters (for example trailing periods) from user.name.
 
