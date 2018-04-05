@@ -77,12 +77,8 @@ header{
 #dragon{
     padding-top: 20px;
     width: 5vw;
-   
+   color:blue;
 }
- @media only screen and (max-width: 425px) {
-        display: none!important;
-    }
-
 
 #halongbay{
     /* position: absolute; */
@@ -280,9 +276,17 @@ ul li{
 
 /*******************************************************Table***********************************************************/
 @media only screen and (max-width:768px){
-    .noibat .fouritems .fouritems__item p{
-        font-size:3vw;
+ 
+    #dragon{
+        padding-top: 0; 
+        font-size: 10vw;
     }
+
+    #halongbay{
+        font-size:4vw;
+    }
+
+
     
     .main-body .main-content{
         width: 100%;
@@ -290,15 +294,16 @@ ul li{
     .main-body #body__title{
         text-align:center;
     }
+
     .aside{
         display: none!important;
     }
 
     .main-content__item--date{
-        font-size: 2vw;
+        font-size: 3vw;
     }
     .main-content__item--description{
-       font-size: 3vw;
+       font-size: 4vw;
     }
 }
 
@@ -325,6 +330,7 @@ ul li{
 
 #dragon{
     padding-top: 0; 
+    font-size: 8vw;
 }
 
     #halongbay{
