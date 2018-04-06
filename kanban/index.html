@@ -32,8 +32,8 @@
             <div class="col m4">
                 <div class="card">
                     <h5>TO DO</h5>
-                    <div class="collection connectedSortable">
-                        <a href="#!" class="collection-item">Hoàn thành khóa học frontend
+                    <div class="collection connectedSortable" id="todo">
+                        <a href="#!" class="collection-item">Hoàn thành khóa học frontend Hoàn thành khóa học frontend
                             <i class="fas fa-trash-alt"></i>
                         </a>
                         <a href="#!" class="collection-item">Học thêm golang
@@ -45,14 +45,9 @@
                         <a href="#!" class="collection-item">Học thêm về algorithm
                             <i class="fas fa-trash-alt"></i>
                         </a>
-                        <div id="newjob">
-                            <input class="newjob" type="text" placeholder="Tạo công việc mới">
-                            <a class="btn-floating waves-effect waves-light red">
-                                <i class="material-icons">add</i>
-                            </a>
-                        </div>
 
                     </div>
+                    <input class="newjob" type="text" placeholder="Tạo công việc mới" onkeydown="app.newJob('todo', this);">
                 </div>
             </div>
 
@@ -61,10 +56,8 @@
                     <h5>Doing</h5>
                     <div class="collection connectedSortable">
                         <a href="#!" class="collection-item">Hoàn thành khóa học frontend
-                            <i class="fas fa-trash-alt"></i>
                         </a>
                         <a href="#!" class="collection-item">Hoàn thành khóa học Backend
-                            <i class="fas fa-trash-alt"></i>
                         </a>
                     </div>
                 </div>
