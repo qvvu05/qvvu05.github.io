@@ -324,24 +324,14 @@ ul li {
         bottom: 5px;
         width: 25vw;
     }
-    .header__slogan--box--content {
-        /* display: none; */
-        width: 25vw;
-        padding-left: 9px;
-    }
-    #discover {
-        color: ghostwhite;
-        font-size: 3vw;
-        margin: 0;
-        display: inline-block;
-    }
+
+
     #dragon {
         padding-top: 0;
         font-size: 8vw;
     }
     #halongbay {
         font-size: 4vw;
-        margin-bottom: 0;
         margin-top: 0;
     }
     #noibat-title {
